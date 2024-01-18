@@ -29,6 +29,7 @@ function swiperAnimation() {
     spaceBetween: 100,
   });
 }
+
 function menuAnimation() {
   var menu = document.querySelector("nav h3");
   var full = document.querySelector("#full-scr");
