@@ -39,7 +39,17 @@
             </h4>
             <h4><a href="https://icon.kg/">Contact</a></h4>
           </div>
-          <h3>Menu</h3>
+          <div class="menu">Menu</div>
+          <div class="menu-bar">
+            <h4><a href="https://icon.kg/">Icon Group</a></h4>
+            <h4>
+              <a href="https://icon.kg/projects/malina/about/"
+                >Other Projects</a
+              >
+            </h4>
+            <h4><a href="https://icon.kg/">Contact</a></h4>
+          </div>
+          <!-- <h3>Menu</h3> -->
         </nav>
         <div id="center">
           <div id="left">
@@ -207,5 +217,27 @@
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Wait for the DOM to be fully loaded before attaching the event listener
+
+        // Get the menu and menu-bar elements
+        var menuButton = document.querySelector(".menu");
+        var menuBar = document.querySelector(".menu-bar");
+
+        // Add a click event listener to the menu button
+        menuButton.addEventListener("click", function () {
+          // Toggle the visibility of the menu-bar element
+          menuBar.classList.toggle("visible");
+
+          // Change the content of the menu button to an SVG image
+          var menuButtonContent = menuBar.classList.contains("visible")
+            ? '<img src="/Users/ulanbeknurlanbekov/Downloads/mans/images/x-solid.svg" alt="" style="width: 16px; height: 16px; color: #443e3ec7;">'
+            : "Menu";
+
+          menuButton.innerHTML = menuButtonContent;
+        });
+      });
+    </script>
   </body>
 </html>
