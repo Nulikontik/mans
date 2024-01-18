@@ -15,13 +15,6 @@
   src: url(./SegoeUI-Bold.woff);
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "neu-light", Arial, sans-serif; /* Используйте 'neu-light' для легкого шрифта (font-weight: 100) */
-}
-
 h1,
 h2,
 h3,
@@ -45,47 +38,6 @@ body {
 
 body {
   margin: 0;
-}
-
-.photo-container {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.photo {
-  opacity: 70%;
-  max-width: 30%;
-  height: auto;
-  display: block;
-  animation: rotate 10s linear infinite;
-}
-
-.photo1 {
-  position: absolute;
-  top: 44%;
-  left: -90px; /* Слева */
-  transform-origin: center center;
-}
-
-.photo2 {
-  position: absolute;
-  top: -7%;
-  right: -15px; /* Слева */
-  transform-origin: center center;
-}
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@media screen and (max-width: 768px) {
-  .photo {
-    max-width: 80%; /* Уменьшаем размер для мобильных устройств */
-  }
 }
 
 #main {
@@ -120,6 +72,7 @@ nav {
 }
 
 #nav-part2 h4 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 10px 20px;
   border: 1px solid #3da754;
   border-radius: 50px;
@@ -309,6 +262,47 @@ nav h3 {
 
   to {
     transform: translateX(-100%);
+  }
+}
+
+.photo-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.photo {
+  opacity: 70%;
+  max-width: 30%;
+  height: auto;
+  display: block;
+  animation: rotate 10s linear infinite;
+}
+
+.photo1 {
+  position: absolute;
+  top: 44%;
+  left: -90px; /* Слева */
+  transform-origin: center center;
+}
+
+.photo2 {
+  position: absolute;
+  top: -7%;
+  right: -15px; /* Слева */
+  transform-origin: center center;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 768px) {
+  .photo {
+    max-width: 80%; /* Уменьшаем размер для мобильных устройств */
   }
 }
 
