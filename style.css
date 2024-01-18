@@ -65,7 +65,6 @@ nav {
   justify-content: space-between;
 }
 
-
 #nav-part2 {
   display: flex;
   align-items: center;
@@ -80,6 +79,7 @@ nav {
 }
 
 @media (max-width: 768px) {
+ 
   #nav-part2 {
     display: none;
   }
@@ -113,7 +113,7 @@ nav {
     /* width: 10%; */
     z-index: 102;
     right: 20px;
-    top: 40px;
+    top: 45px;
     border: 1px solid #b1a7a7cd;
     border-radius: 10px;
     padding: 6px 10px;
