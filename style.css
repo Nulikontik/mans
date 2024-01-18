@@ -1,18 +1,18 @@
 @font-face {
   font-family: "neu-light";
-  src: url(./FuturaLT-Book.woff2);
+  src: url(./SegoeUI.woff);
 }
 
 @font-face {
   font-family: "neu-light";
   font-weight: 100;
-  src: url(./FuturaLT-Book.woff2);
+  src: url(./SegoeUI.woff);
 }
 
 @font-face {
   font-family: "neu-bold";
   font-weight: 200;
-  src: url(./FuturaLT-Bold.woff2);
+  src: url(./SegoeUI-Bold.woff);
 }
 
 body {
@@ -55,7 +55,7 @@ body {
 
 .photo {
   opacity: 70%;
-  max-width: 35%;
+  max-width: 30%;
   height: auto;
   display: block;
   animation: rotate 10s linear infinite;
@@ -63,11 +63,17 @@ body {
 
 .photo1 {
   position: absolute;
-  top: 35%;
-  left: 0px; /* Слева */
+  top: 44%;
+  left: -90px; /* Слева */
   transform-origin: center center;
 }
 
+.photo2 {
+  position: absolute;
+  top: -7%;
+  right: -15px; /* Слева */
+  transform-origin: center center;
+}
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -258,7 +264,7 @@ nav h3 {
 #page2 {
   min-height: 100vh;
   width: 100%;
-  background-color: #efeae3;
+  background-color: #ffffff;
   padding: 8vw 0;
   position: relative;
 }
@@ -335,6 +341,7 @@ nav h3 {
 }
 
 #bottom-part2 p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 200;
   margin-top: 2vw;
   font-size: 1vw;
@@ -373,7 +380,7 @@ nav h3 {
 #page3 {
   min-height: 100vh;
   width: 100%;
-  background-color: #efeae3;
+  background-color: #ffffff;
   padding: 4vw 0;
 }
 
@@ -426,7 +433,7 @@ nav h3 {
 #page4 {
   height: 70vh;
   width: 100%;
-  background-color: #efeae3;
+  background-color: #ffffff;
   padding: 10vw 2vw;
 }
 
@@ -436,6 +443,7 @@ nav h3 {
 }
 
 .swiper-slide {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   width: 30%;
   border-left: 1px solid #aeadad;
   padding: 0 2vw;
@@ -451,7 +459,7 @@ nav h3 {
   position: fixed;
   height: 105vh;
   width: 100%;
-  background-color: #5a5757;
+  background-color: #092207;
   color: #fff;
   z-index: 9;
   bottom: 0;
@@ -465,13 +473,14 @@ nav h3 {
 #footer h1 {
   font-size: 13vw;
   text-align: center;
+  margin-top: -10px;
 }
 
-#footer-div {
+/* #footer-div {
   height: 20vh;
   width: 100%;
   background-color: #3da754;
-}
+} */
 
 #footer-bottom {
   border-top: 1px solid #dadada;
@@ -665,7 +674,7 @@ nav h3 {
 #loader {
   height: 100%;
   width: 100%;
-  background-color: #000;
+  background-color: #092207;
   position: fixed;
   z-index: 999;
   top: 0;
