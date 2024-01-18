@@ -43,6 +43,40 @@ body {
   width: 100%;
 }
 
+body {
+  margin: 0;
+}
+
+.photo-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.photo {
+  opacity: 70%;
+  max-width: 35%;
+  height: auto;
+  display: block;
+  animation: rotate 10s linear infinite;
+}
+
+.photo1 {
+  position: absolute;
+  top: 35%;
+  left: 0px; /* Слева */
+  transform-origin: center center;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 #main {
   /* background-color: #000; */
   position: relative;
@@ -412,7 +446,7 @@ nav h3 {
   position: fixed;
   height: 105vh;
   width: 100%;
-  background-color: #000;
+  background-color: #5a5757;
   color: #fff;
   z-index: 9;
   bottom: 0;
