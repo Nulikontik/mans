@@ -57,17 +57,17 @@ body {
   padding: 0 2vw;
 }
 
-/* nav {
+nav {
   padding: 2vw 0vw;
   width: 100%;
-
+  /* background-color: red; */
   display: flex;
   align-items: center;
   position: relative;
   z-index: 100;
   justify-content: space-between;
-} */
-/* 
+}
+
 #nav-part2 {
   display: flex;
   align-items: center;
@@ -76,10 +76,10 @@ body {
 
 #nav-part2 h4 {
   padding: 10px 20px;
-  border: 1px solid #0000003c;
+  border: 1px solid #3da754;
   border-radius: 50px;
   font-weight: 500;
-  color: #000000bb;
+  color: #4e4d4dbb;
   transition: all ease 0.4s;
   position: relative;
   font-size: 18px;
@@ -91,14 +91,14 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: black;
+  background-color: #3da754;
   left: 0;
   bottom: -100%;
   border-radius: 50%;
   transition: all ease 0.4s;
-} */
+}
 
-/* #nav-part2 h4:hover::after {
+#nav-part2 h4:hover::after {
   bottom: 0;
   border-radius: 0;
 }
@@ -112,98 +112,10 @@ body {
 
 #nav-part2 h4:hover a {
   color: #fff;
-} */
+}
 
-/* nav h3 {
+nav h3 {
   display: none;
-} */
-
-#menu__toggle {
-  opacity: 0;
-}
-
-#menu__toggle:checked ~ .menu__btn > span {
-  transform: rotate(45deg);
-}
-#menu__toggle:checked ~ .menu__btn > span::before {
-  top: 0;
-  transform: rotate(0);
-}
-#menu__toggle:checked ~ .menu__btn > span::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-#menu__toggle:checked ~ .menu__box {
-  visibility: visible;
-  left: 0;
-}
-
-.menu__btn {
-  display: flex;
-  align-items: center;
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  width: 26px;
-  height: 26px;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.menu__btn > span,
-.menu__btn > span::before,
-.menu__btn > span::after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #9896963e;
-  transition-duration: 0.25s;
-}
-.menu__btn > span::before {
-  content: "";
-  top: -8px;
-}
-.menu__btn > span::after {
-  content: "";
-  top: 8px;
-}
-
-.menu__box {
-  display: block;
-  position: fixed;
-  visibility: hidden;
-  top: 0;
-  left: -100%;
-  width: 100%; /* Ширина изменена на 100% для мобильных устройств */
-  height: 100%;
-  margin: 0;
-  padding: 80px 0;
-  list-style: none;
-  background-color: #eceff1cd;
-  box-shadow: 1px 0px 6px rgba(0, 0, 0, 0);
-  transition-duration: 0.25s;
-}
-
-.menu__item {
-  display: block;
-  padding: 12px 24px;
-  color: #333;
-  font-family: "futura", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  text-decoration: none;
-  transition-duration: 0.25s;
-}
-.menu__item:hover {
-  background-color: #3dc3563a;
-}
-
-@media screen and (min-width: 768px) {
-  /* Добавьте стили, которые должны применяться только для устройств с шириной экрана более 768px */
-  .menu__box {
-    width: 300px;
-  }
 }
 
 #center {
@@ -216,11 +128,11 @@ body {
   border-bottom: 1px solid #0000003c;
   padding-bottom: 2.5vw;
 }
-/* #left h3 {
+#left h3 {
   width: 25vw;
   font-size: 1.8vw;
   line-height: 2vw;
-} */
+}
 
 #center h1 {
   font-size: 10vw;
@@ -244,7 +156,7 @@ body {
 }
 
 #hero-1 {
-  background-color: #3fa115;
+  background-color: #3da754;
   opacity: 70%;
   height: 100%;
   width: 100%;
@@ -255,7 +167,7 @@ body {
 }
 
 #hero-2 {
-  background: linear-gradient(#3fa115, #a9d046);
+  background: linear-gradient(#3da754, #a9d046);
   opacity: 80%;
   height: 30vw;
   width: 30vw;
@@ -270,7 +182,7 @@ body {
 }
 
 #hero-3 {
-  background: linear-gradient(#3fa115, #a9d046);
+  background: linear-gradient(#3da754, #a9d046);
   opacity: 70%;
   height: 30vw;
   position: absolute;
@@ -341,7 +253,7 @@ body {
   width: 70px;
   border-radius: 50%;
   display: inline-block;
-  background-color: #3fa115;
+  background-color: #a9d046;
   margin: 1vw 2vw;
 }
 
@@ -394,7 +306,7 @@ body {
   width: 32vw;
   position: absolute;
   border-radius: 50%;
-  background: linear-gradient(to top right, #3fa115, #a9d046);
+  background: linear-gradient(to top right, #3da754, #a9d046);
   /* background: linear-gradient(to top right,red,blue); */
 
   top: 58%;
@@ -447,7 +359,7 @@ body {
 .elem .overlay {
   height: 100%;
   width: 100%;
-  background-color: orange;
+  background-color: #3da754;
   position: absolute;
   left: 0;
   top: -100%;
@@ -519,7 +431,7 @@ body {
 #footer-div {
   height: 20vh;
   width: 100%;
-  background-color: #3fa115;
+  background-color: #3da754;
 }
 
 #footer-bottom {
@@ -568,7 +480,7 @@ body {
     display: none;
   }
 
-  /* nav h3 {
+  nav h3 {
     display: block;
     padding: 3vw 5vw;
     border: 1px solid #ababab;
@@ -576,7 +488,7 @@ body {
     font-size: 4vw;
     font-weight: 200;
     padding-left: 10vw;
-  } */
+  }
 
   #center {
     height: 62vh;
@@ -593,11 +505,11 @@ body {
     z-index: 9;
   }
 
-  /* #left h3 {
+  #left h3 {
     width: 80%;
     font-size: 5.5vw;
     line-height: 6vw;
-  } */
+  }
 
   #center h1 {
     font-size: 17vw;
@@ -653,7 +565,7 @@ body {
     width: 25px;
     border-radius: 50%;
     display: inline-block;
-    background-color: #3fa115;
+    background-color: #3da754;
     margin: 2vw 2vw;
   }
 
@@ -697,7 +609,7 @@ body {
     width: 62vw;
     position: absolute;
     border-radius: 50%;
-    background: linear-gradient(to top right, #3fa115, #a9d046);
+    background: linear-gradient(to top right, #3da754, #a9d046);
     /* background: linear-gradient(to top right,red,blue); */
 
     top: 58%;
@@ -727,7 +639,7 @@ body {
 #loader h1 {
   font-size: 4vw;
   color: transparent;
-  background: linear-gradient(to right, #205a07, #aaf14e);
+  background: linear-gradient(to right, #3da754, #a9d046);
   -webkit-background-clip: text;
   position: absolute;
   opacity: 0;
