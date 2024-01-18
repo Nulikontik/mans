@@ -436,7 +436,7 @@ nav h3 {
 }
 
 #footer-bottom {
-  border-top: 1px solid #dadada;
+  border-top: 1px solid #ffffff;
   height: 10vh;
   width: 100%;
 }
@@ -468,7 +468,7 @@ nav h3 {
 
   nav {
     padding: 8vw 5vw;
-    background-color: #efeae3;
+    background-color: #ffffff;
     /* padding: 0 5vw; */
   }
 
@@ -566,7 +566,7 @@ nav h3 {
     width: 25px;
     border-radius: 50%;
     display: inline-block;
-    background-color: #fe320a;
+    background-color: #3fa115;
     margin: 2vw 2vw;
   }
 
@@ -610,7 +610,7 @@ nav h3 {
     width: 62vw;
     position: absolute;
     border-radius: 50%;
-    background: linear-gradient(to top right, #ff2d03, #ff5c0b);
+    background: linear-gradient(to top right, #3fa115, #a9d046);
     /* background: linear-gradient(to top right,red,blue); */
 
     top: 58%;
