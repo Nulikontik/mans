@@ -78,50 +78,6 @@ nav {
   display: none;
 }
 
-@media (max-width: 768px) {
- 
-  #nav-part2 {
-    display: none;
-  }
-  .logo-1 {
-    width: 110px;
-  }
-  #center {
-    margin-top: 100px;
-  }
-  .menu-bar.visible {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    z-index: 101;
-    left: 0;
-    background: #ffffffac;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 100px;
-    top: 0;
-    gap: 15px;
-    backdrop-filter: blur(20px);
-  }
-  .menu {
-    display: block;
-    cursor: pointer;
-    position: absolute;
-    /* width: 10%; */
-    z-index: 102;
-    right: 20px;
-    top: 45px;
-    border: 1px solid #b1a7a7cd;
-    border-radius: 10px;
-    padding: 6px 10px;
-    color: #443e3ec7;
-    font-size: 16px;
-  }
-}
-
 #nav-part2 h4 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 10px 20px;
@@ -325,6 +281,7 @@ nav h3 {
 .photo {
   opacity: 70%;
   max-width: 30%;
+  z-index: 10;
   height: auto;
   display: block;
   animation: rotate 10s linear infinite;
@@ -423,56 +380,117 @@ nav h3 {
 }
 
 #page3 {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   width: 100%;
   background-color: #ffffff;
-  padding: 4vw 0;
+  padding: 4vw 30px;
 }
-
-.elem {
-  height: 150px;
+#elem-container {
   width: 100%;
-  position: relative;
-
-  border-bottom: 1px solid #38383864;
-  overflow: hidden;
   display: flex;
   align-items: center;
-  padding: 0 2vw;
-}
-
-.elem h2 {
-  font-size: 3vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
   position: relative;
-  z-index: 9;
 }
 
-.elem .overlay {
-  height: 100%;
-  width: 100%;
-  background-color: #3da754;
-  position: absolute;
+.close-btn {
+  border: none;
+  background: transparent;
+  font-size: 30px;
+  outline: none;
+  color: #a6a6a6;
+  -webkit-tap-highlight-color: transparent; /* For mobile Safari */
+  -webkit-focus-ring-color: transparent; /* For Chrome and Safari */
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+dialog::backdrop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.88);
+  backdrop-filter: blur(30px);
+  opacity: 0.9;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.modal-content {
+  width: 300px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #fff;
+}
+.modal .modal-content > p {
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  width: 90%;
+}
+
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
   left: 0;
-  top: -100%;
-  transition: all ease 0.25s;
-}
-
-.elem:hover .overlay {
   top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  display: flex; /* Enable flex */
+  align-items: center; /* Center modal vertically */
+  justify-content: center; /* Center modal horizontally */
 }
 
-#fixed-image {
-  height: 30vw;
-  width: 24vw;
-  /* background-color: red; */
-  border-radius: 15px;
-  position: fixed;
-  z-index: 99;
-  left: 50%;
-  top: 25%;
-  display: none;
-  background-size: cover;
-  background-position: center;
+.modal .modal-content > img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.card {
+  width: 300px;
+  /* height: 350px; */
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 15px 0;
+}
+
+.card > p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  background: #eaeaea;
+  padding: 15px 0;
+  border-radius: 3px;
+}
+
+.card-img {
+  width: 100%;
+  height: 83%;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.card-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #page4 {
@@ -501,7 +519,7 @@ nav h3 {
 }
 
 #footer {
-  position: fixed;
+  position: absolute;
   height: 105vh;
   width: 100%;
   background-color: #092207;
@@ -766,5 +784,48 @@ nav h3 {
 @media (max-width: 600px) {
   #loader h1 {
     font-size: 9vw;
+  }
+}
+
+@media (max-width: 768px) {
+  #nav-part2 {
+    display: none;
+  }
+  .logo-1 {
+    width: 110px;
+  }
+  #center {
+    margin-top: 100px;
+  }
+  .menu-bar.visible {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 101;
+    left: 0;
+    background: #ffffffac;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    top: 0;
+    gap: 15px;
+    backdrop-filter: blur(20px);
+  }
+  .menu {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    /* width: 10%; */
+    z-index: 102;
+    right: 20px;
+    top: 45px;
+    border: 1px solid #b1a7a7cd;
+    border-radius: 10px;
+    padding: 6px 10px;
+    color: #443e3ec7;
+    font-size: 16px;
   }
 }

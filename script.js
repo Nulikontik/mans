@@ -30,7 +30,6 @@ function swiperAnimation() {
   });
 }
 
-
 // function menuAnimation() {
 //   var menu = document.querySelector("nav h3");
 //   var full = document.querySelector("#full-scr");
@@ -60,3 +59,25 @@ swiperAnimation();
 page4Animation();
 // menuAnimation();
 loaderAnimation();
+
+for (let i = 1; i <= 7; i++) {
+  const favDialog = document.getElementById(`favDialog${i}`);
+  const confirmBtn = document.getElementById(`confirmBtn${i}`);
+  const showDialogBtn = document.getElementById(`showDialogBtn${i}`);
+
+  showDialogBtn.addEventListener("click", () => favDialog.showModal());
+
+  confirmBtn.addEventListener("click", () => {
+    favDialog.close();
+  });
+}
+
+const favDialog = document.getElementById("favDialog");
+const confirmBtn = document.getElementById("confirmBtn");
+const showDialogBtn = document.getElementById("showDialogBtn");
+
+showDialogBtn.addEventListener("click", () => favDialog.showModal());
+
+confirmBtn.addEventListener("click", () => {
+  favDialog.close();
+});
