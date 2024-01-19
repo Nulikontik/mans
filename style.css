@@ -911,11 +911,11 @@ dialog::backdrop {
     /* width: 10%; */
     z-index: 102;
     right: 20px;
-    top: 46px;
+    top: 51px;
     border: 1px solid #b1a7a7cd;
     border-radius: 10px;
     padding: 6px 10px;
     color: #443e3ec7;
-    font-size: 16px;
+    font-size: 22px;
   }
 }
