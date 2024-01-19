@@ -433,14 +433,15 @@ dialog::backdrop {
   align-items: center;
   flex-direction: column;
   gap: 20px;
-  border: 1px solid #000;
+  border: 1px solid #c0c0c0d9;
   border-radius: 4px;
   overflow: hidden;
-  background: #fff;
+  background: #3da754;
 }
 .modal .modal-content > p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
-  color: #000;
+  color: #ffffff;
   text-align: center;
   width: 90%;
 }
@@ -490,6 +491,7 @@ dialog::backdrop {
   transition: background 0.3s ease, color 0.3s ease; /* добавленные эффекты перехода при hover */
   color: #000000; ;
 }
+
 .card > p:hover {
   
   background: #3da754; /* новый цвет фона при hover */
@@ -837,7 +839,7 @@ dialog::backdrop {
     /* width: 10%; */
     z-index: 102;
     right: 20px;
-    top: 45px;
+    top: 46px;
     border: 1px solid #b1a7a7cd;
     border-radius: 10px;
     padding: 6px 10px;
