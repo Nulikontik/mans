@@ -15,6 +15,55 @@
   src: url(./SegoeUI-Bold.woff);
 }
 
+body {
+  margin: 0;
+}
+
+/* Применяем стиль overflow: hidden и ширину адаптивки для родительского контейнера каждой секции */
+#page1,
+#page2,
+#page3,
+#page4,
+#page5 {
+  overflow: hidden;
+  width: 100%; /* Ширина адаптивки */
+}
+
+/* Добавляем стили для контента внутри секций (по вашему усмотрению) */
+#page1 {
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 0 2vw;
+  position: relative;
+}
+
+#page2 {
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 8vw 0;
+  position: relative;
+}
+
+#page3 {
+  background-color: #ffffff;
+  padding: 4vw 30px;
+}
+
+#page4 {
+  height: 70vh;
+  background-color: #ffffff;
+  padding: 10vw 2vw;
+}
+
+#page5 {
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+/* Дополнительные стили для остальных секций (по вашему усмотрению) */
+
+
+
 h1,
 h2,
 h3,
