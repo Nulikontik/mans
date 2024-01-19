@@ -555,8 +555,8 @@ dialog::backdrop {
 }
 
 #footer {
-  position: fixed;
-  height: auto;
+  position: absolute;
+  height: 105vh;
   width: 100%;
   background-color: #092207;
   color: #fff;
