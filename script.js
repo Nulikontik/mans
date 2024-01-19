@@ -27,6 +27,7 @@ function swiperAnimation() {
     slidesPerView: "auto",
     centeredSlides: true,
     spaceBetween: 100,
+    initialSlide: 1,
   });
 }
 

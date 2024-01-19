@@ -524,11 +524,29 @@ dialog::backdrop {
 }
 
 .swiper-slide {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  width: 30%;
-  border-left: 1px solid #aeadad;
-  padding: 0 2vw;
+  width: 80%; /* Увеличиваем ширину для мобильной адаптивности */
+  margin: 0 auto; /* Центрируем слайды по горизонтали */
+  box-sizing: border-box; /* Учитываем padding и border внутри ширины */
 }
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Заполнение области изображения, сохраняя пропорции */
+}
+
+@media (min-width: 768px) {
+  .swiper-slide {
+    
+    width: 30%; /* Возвращаем ширину для больших экранов */
+    border-left: none; /* Убираем линию между слайдами */
+    padding: 0; /* Убираем padding для слайдов */
+    
+  }
+  
+
+}
+
 
 #page5 {
   height: 100vh;
