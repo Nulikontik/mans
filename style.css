@@ -549,7 +549,7 @@ dialog::backdrop {
 
 
 #page5 {
-  height: 100vh;
+  height: auto;
   width: 100%;
   /* background-color: #EFEAE3; */
 }
