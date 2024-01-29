@@ -3,6 +3,27 @@ const scroll = new LocomotiveScroll({
   smooth: true,
 });
 
+// Select the links you want to apply smooth scrolling to
+const smoothScrollLinks = document.querySelectorAll(".smooth-scroll"); // Or any other selector
+
+smoothScrollLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault(); // Prevent default link behavior
+
+    const targetId = link.getAttribute("href");
+    const targetElement = document.querySelector(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+        // Optional: Customize alignment and scrolling position
+        block: "start", // or 'center', 'end', 'nearest'
+        inline: "start", // or 'center', 'end', 'nearest'
+      });
+    }
+  });
+});
+
 function page4Animation() {
   var elemC = document.querySelector("#elem-container");
   var fixed = document.querySelector("#fixed-image");
